@@ -1,5 +1,5 @@
 import { Module } from '@nestjs/common';
-import { TodosModule } from './users/todos.module';
+import { TodosModule } from './todos/todos.module';
 import { MongooseModule } from '@nestjs/mongoose';
 
 @Module({
