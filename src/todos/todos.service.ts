@@ -22,8 +22,8 @@ export class TodosService {
     return await newUser.save();
   }
 
-  async getAllTodos() {
-    const findUser = this.todoModel.find().exec();
+  async getAllTodos(): Promise<Todo[]> {
+    const findUser = await this.todoModel.find();
     return findUser;
   }
 
